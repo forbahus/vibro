@@ -28,16 +28,15 @@ __published:	// IDE-managed Components
 	TStringGrid *ListConfig;
 	TStringGrid *ListTypes;
 	void __fastcall BtnExitClick(TObject *Sender);
-	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall ListConfigSelectCell(TObject *Sender, int ACol, int ARow, bool &CanSelect);
 	void __fastcall EdtNumberExit(TObject *Sender);
 	void __fastcall ListTypesSelectCell(TObject *Sender, int ACol, int ARow, bool &CanSelect);
+	void __fastcall BtnStartClick(TObject *Sender);
 
 
 private:	// User declarations
 public:
 	__fastcall TConfigsForm(TComponent* Owner);
-	void __fastcall ListConfigWrite();
 	__fastcall ~TConfigsForm();
 };
 //---------------------------------------------------------------------------

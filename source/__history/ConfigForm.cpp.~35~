@@ -1,0 +1,79 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "ConfigForm.h"
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TConfigsForm *ConfigsForm;
+extern TOptions *Options;
+
+//---------------------------------------------------------------------------
+__fastcall TConfigsForm::TConfigsForm(TComponent* Owner)
+	: TForm(Owner)
+{
+	Options = new TOptions(this);
+	EdtNumber->Text = Options->ObjectNum;
+
+	ListConfig->RowCount = Options->ConfigNamesCount;
+	for (int i=0; i < Options->ConfigNamesCount; i++) {
+		ListConfig->Cells[0][i] = Options->AttrNames[i];
+	}
+
+	ListTypes->RowCount = Options->ConfigTypesCount;
+	for (int i = 0; i < Options->ConfigTypesCount; i++) {
+		ListTypes->Cells[0][i] = Options->AttrTypes[i];
+	}
+
+
+	TGridRect r;
+	r.Left = 0;
+	r.Right = 0;
+	r.Top = Options->CurrentConfNum;
+	r.Bottom = r.Top;
+	ListConfig->Selection=r;
+
+	r.Top = Options->CurrentTypNum;
+	r.Bottom = r.Top;
+	ListTypes->Selection=r;
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TConfigsForm::BtnExitClick(TObject *Sender)
+{
+	Application->Terminate();
+}
+//---------------------------------------------------------------------------
+__fastcall TConfigsForm::~TConfigsForm()
+{
+	delete Options;
+}
+
+void __fastcall TConfigsForm::ListConfigSelectCell(TObject *Sender, int ACol, int ARow,
+          bool &CanSelect)
+{
+	Options->CurrentConfNum = ARow;
+	Options->XMLConfigSaver();
+	Options->XMLReading(Options->ConfigNames[Options->CurrentConfNum]);
+}
+//---------------------------------------------------------------------------
+void __fastcall TConfigsForm::EdtNumberExit(TObject *Sender)
+{
+	Options->ObjectNum=EdtNumber->Text;
+	Options->XMLConfigSaver();
+}
+//---------------------------------------------------------------------------
+void __fastcall TConfigsForm::ListTypesSelectCell(TObject *Sender, int ACol, int ARow,
+          bool &CanSelect)
+{
+	Options->CurrentTypNum = ARow;
+	Options->XMLConfigSaver();
+}
+//---------------------------------------------------------------------------
+
+
+
+

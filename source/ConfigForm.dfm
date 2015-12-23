@@ -14,7 +14,6 @@ object ConfigsForm: TConfigsForm
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
-  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 21
   object Label1: TLabel
@@ -93,6 +92,7 @@ object ConfigsForm: TConfigsForm
     Height = 43
     Caption = #1055#1091#1089#1082
     TabOrder = 4
+    OnClick = BtnStartClick
   end
   object BtnChOptions: TButton
     Left = 249

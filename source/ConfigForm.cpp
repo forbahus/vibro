@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "ConfigForm.h"
+#include "UMainForm.h"
 
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -17,49 +18,34 @@ __fastcall TConfigsForm::TConfigsForm(TComponent* Owner)
 {
 	Options = new TOptions(this);
 	EdtNumber->Text = Options->ObjectNum;
-	ShowMessage(EdtNumber->Text);
-}
-//---------------------------------------------------------------------------
-void __fastcall TConfigsForm::BtnExitClick(TObject *Sender)
-{
-	Close();
-}
-//---------------------------------------------------------------------------
 
-void __fastcall TConfigsForm::FormCreate(TObject *Sender)
-{
-/*
-	//цикл по конфигам для вывода на экран и выделить текущий по индексу
-	ListConfigWrite();
-*/
-}
-//---------------------------------------------------------------------------
-void __fastcall TConfigsForm::ListConfigWrite()
-{
-/*
+	ListConfig->RowCount = Options->ConfigNamesCount;
+	for (int i=0; i < Options->ConfigNamesCount; i++) {
+		ListConfig->Cells[0][i] = Options->AttrNames[i];
+	}
+
+	ListTypes->RowCount = Options->ConfigTypesCount;
+	for (int i = 0; i < Options->ConfigTypesCount; i++) {
+		ListTypes->Cells[0][i] = Options->AttrTypes[i];
+	}
+
+
 	TGridRect r;
 	r.Left = 0;
 	r.Right = 0;
-	ListConfig->RowCount = Options->ConfigNamesCount;
-	for (int i=0; i < Options->ConfigNamesCount; i++)
-	{
-		 ListConfig->Cells[0][i] = Options->AttrNames[i];
-	}
 	r.Top = Options->CurrentConfNum;
 	r.Bottom = r.Top;
 	ListConfig->Selection=r;
 
-	for (int i=0; i < Options->ConfigTypesCount; i++)
-	{
-		 ListTypes->Cells[0][i] = Options->AttrTypes[i];
-	}
-	ListTypes->RowCount=Options->ConfigTypesCount;
 	r.Top = Options->CurrentTypNum;
 	r.Bottom = r.Top;
 	ListTypes->Selection=r;
 
-	EdtNumber->Text=Options->ObjectNum;
-	*/
+}
+//---------------------------------------------------------------------------
+void __fastcall TConfigsForm::BtnExitClick(TObject *Sender)
+{
+	Application->Terminate();
 }
 //---------------------------------------------------------------------------
 __fastcall TConfigsForm::~TConfigsForm()
@@ -70,54 +56,33 @@ __fastcall TConfigsForm::~TConfigsForm()
 void __fastcall TConfigsForm::ListConfigSelectCell(TObject *Sender, int ACol, int ARow,
           bool &CanSelect)
 {
-/*
-	for (int i=0; i < Options->ConfigNamesCount; i++)
-	{
-		if(Options->AttrNames[i]==ListConfig->Cells[ACol][ARow])
-		{
-			Options->CurrentConfNum = i;
-			Options->XMLConfigSaver();
-			Options->XMLReading(Options->ConfigNames[i]);
-			OptionsForm->OptionsWrite();
-			break;
-		}
-	}
-*/
+	Options->CurrentConfNum = ARow;
+	Options->XMLConfigSaver();
+	Options->XMLReading(Options->ConfigNames[Options->CurrentConfNum]);
 }
 //---------------------------------------------------------------------------
-
-
-
-
 void __fastcall TConfigsForm::EdtNumberExit(TObject *Sender)
 {
-/*
 	Options->ObjectNum=EdtNumber->Text;
 	Options->XMLConfigSaver();
-*/
 }
 //---------------------------------------------------------------------------
-
-
 void __fastcall TConfigsForm::ListTypesSelectCell(TObject *Sender, int ACol, int ARow,
           bool &CanSelect)
 {
-/*
-	for (int i=0; i < Options->ConfigTypesCount; i++)
-	{
-		if(Options->AttrTypes[i]==ListTypes->Cells[ACol][ARow])
-		{
-			Options->CurrentTypNum = i;
-			Options->XMLConfigSaver();
-			//Options->XMLReading(Options->ConfigNames[i]);
-			//OptionsForm->OptionsWrite();
-			break;
-		}
-	}
-	*/
+	Options->CurrentTypNum = ARow;
+	Options->XMLConfigSaver();
 }
 //---------------------------------------------------------------------------
 
 
 
+
+void __fastcall TConfigsForm::BtnStartClick(TObject *Sender)
+{
+	MainForm = new TMainForm(this);
+	MainForm->WindowState = wsMaximized;
+	MainForm->Show();
+}
+//---------------------------------------------------------------------------
 

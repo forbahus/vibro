@@ -3,9 +3,13 @@
 #include <vcl.h>
 #pragma hdrstop
 #include <tchar.h>
+
+#include "ConfigForm.h"
+
 //---------------------------------------------------------------------------
 USEFORM("ChannelConfig.cpp", OptionsForm);
 USEFORM("ConfigForm.cpp", ConfigsForm);
+USEFORM("UMainForm.cpp", MainForm);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -14,7 +18,9 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
 
-		Application->CreateForm(__classid(TConfigsForm), &ConfigsForm);
+		ConfigsForm = new TConfigsForm(NULL);
+		ConfigsForm->ShowModal();
+
 		Application->Run();
 	}
 	catch (Exception &exception)
