@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.099,D:\Programming\Vibro\ChannelConfig.h=D:\Programming\Vibro\Настройка_каналов.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.099,D:\Programming\Vibro\ChannelConfig.cpp=D:\Programming\Vibro\Настройка_каналов.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.921,D:\Programming\Vibro\ChannelOptions.cpp=</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.731,D:\Rabota\Вибрация\Unit2.h=D:\Rabota\Вибрация\Настройка_каналов.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.271,C:\Users\Саня\Documents\RAD Studio\Projects\Project1.cbproj=D:\Rabota\Вибрация\Vibration.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.557,=C:\Users\Саня\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.691,C:\Users\Саня\Documents\RAD Studio\Projects\Project1PCH1.h=D:\Rabota\Вибрация\VibrationProj.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.867,D:\Rabota\Вибрация\ChannelOptions.h=D:\Rabota\Вибрация\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.825,C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.cpp=D:\Rabota\Вибрация\Main.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.594,=C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.867,D:\Rabota\Вибрация\ChannelOptions.dfm=D:\Rabota\Вибрация\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.867,D:\Rabota\Вибрация\ChannelOptions.cpp=D:\Rabota\Вибрация\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.731,D:\Rabota\Вибрация\Unit2.cpp=D:\Rabota\Вибрация\Настройка_каналов.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.825,D:\Rabota\Вибрация\Main.h=C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,F:\git\vibro\source\Unit1.dfm=F:\git\vibro\source\UMainForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.867,D:\Rabota\Вибрация\Unit1.dfm=D:\Rabota\Вибрация\ChannelOptions.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.825,D:\Rabota\Вибрация\Main.dfm=C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.869,=D:\Rabota\Вибрация\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.399,D:\Programming\Vibro\Main.dfm=D:\Programming\Vibro\ConfigForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.594,=C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.883,D:\Rabota\Вибрация\Options.h=D:\Rabota\Вибрация\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,F:\git\vibro\source\Unit1.cpp=F:\git\vibro\source\UMainForm.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.321,=F:\git\vibro\source\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.867,D:\Rabota\Вибрация\Unit1.h=D:\Rabota\Вибрация\ChannelOptions.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.921,D:\Programming\Vibro\ChannelOptions.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.731,D:\Rabota\Вибрация\Настройка_каналов.h=D:\Rabota\Вибрация\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.271,D:\Rabota\Вибрация\Vibration.cbproj=C:\Users\Саня\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.731,D:\Rabota\Вибрация\Настройка_каналов.cpp=D:\Rabota\Вибрация\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.867,D:\Rabota\Вибрация\Unit1.cpp=D:\Rabota\Вибрация\ChannelOptions.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.612,=D:\Rabota\Вибрация\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.825,C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.dfm=D:\Rabota\Вибрация\Main.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.555,=D:\Rabota\Вибрация\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.883,D:\Rabota\Вибрация\Unit1.h=D:\Rabota\Вибрация\Options.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.883,D:\Rabota\Вибрация\Unit1.cpp=D:\Rabota\Вибрация\Options.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,D:\Programming\Vibro\Настройка_каналов.cpp=D:\Programming\Vibro\ChannelConfig.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.883,D:\Rabota\Вибрация\Options.cpp=D:\Rabota\Вибрация\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.731,D:\Rabota\Вибрация\Настройка_каналов.dfm=D:\Rabota\Вибрация\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,D:\Programming\Vibro\Настройка_каналов.h=D:\Programming\Vibro\ChannelConfig.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.254,=D:\Rabota\Вибрация\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.731,D:\Rabota\Вибрация\Unit2.dfm=D:\Rabota\Вибрация\Настройка_каналов.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.399,D:\Programming\Vibro\ConfigForm.dfm=D:\Programming\Vibro\Main.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.399,D:\Programming\Vibro\ConfigForm.h=D:\Programming\Vibro\Main.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.099,D:\Programming\Vibro\ChannelConfig.dfm=D:\Programming\Vibro\Настройка_каналов.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.825,C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.h=D:\Rabota\Вибрация\Main.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.399,D:\Programming\Vibro\ConfigForm.cpp=D:\Programming\Vibro\Main.cpp</Transaction>
-    <Transaction>2015.12.23 15:13:34.321,=F:\git\vibro\source\Unit1.cpp</Transaction>
-    <Transaction>2015.12.23 15:13:43.099,F:\git\vibro\source\UMainForm.h=F:\git\vibro\source\Unit1.h</Transaction>
-    <Transaction>2015.12.23 15:13:43.099,F:\git\vibro\source\UMainForm.cpp=F:\git\vibro\source\Unit1.cpp</Transaction>
-    <Transaction>2015.12.23 15:13:43.099,F:\git\vibro\source\UMainForm.dfm=F:\git\vibro\source\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.399,D:\Programming\Vibro\Main.cpp=D:\Programming\Vibro\ConfigForm.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.691,D:\Rabota\Вибрация\VibrationProj.h=C:\Users\Саня\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,D:\Programming\Vibro\Настройка_каналов.dfm=D:\Programming\Vibro\ChannelConfig.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.825,D:\Rabota\Вибрация\Main.cpp=C:\Users\Саня\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,F:\git\vibro\source\Unit1.h=F:\git\vibro\source\UMainForm.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.399,D:\Programming\Vibro\Main.h=D:\Programming\Vibro\ConfigForm.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.557,=C:\Users\Саня\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
   </Transactions>
 </BorlandProject>

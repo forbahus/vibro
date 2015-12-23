@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E61CCFCE-C315-42AF-825F-29FBD99CB91D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Vibration.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugins\template\template.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Vibration">
+        <MSBuild Projects="Vibration.cbproj"/>
+    </Target>
+    <Target Name="Vibration:Clean">
+        <MSBuild Projects="Vibration.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Vibration:Make">
+        <MSBuild Projects="Vibration.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="template">
+        <MSBuild Projects="plugins\template\template.cbproj"/>
+    </Target>
+    <Target Name="template:Clean">
+        <MSBuild Projects="plugins\template\template.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="template:Make">
+        <MSBuild Projects="plugins\template\template.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Vibration;template"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Vibration:Clean;template:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Vibration:Make;template:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

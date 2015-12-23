@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2015.12.23 15:57:52.872,=C:\Users\Владимир\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2015.12.23 15:57:52.885,=C:\Users\Владимир\Documents\RAD Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2015.12.23 15:58:32.733,F:\git\vibro\source\plugins\template\main.cpp=C:\Users\Владимир\Documents\RAD Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2015.12.23 15:58:35.240,F:\git\vibro\source\plugins\template\Project1PCH1.h=C:\Users\Владимир\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2015.12.23 15:58:40.373,F:\git\vibro\source\plugins\template\templatePCH1.h=F:\git\vibro\source\plugins\template\Project1PCH1.h</Transaction>
+    <Transaction>2015.12.23 15:58:40.387,F:\git\vibro\source\plugins\template\template.cbproj=C:\Users\Владимир\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
